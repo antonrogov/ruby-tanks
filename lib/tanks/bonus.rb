@@ -1,0 +1,10 @@
+module Tanks
+  module BonusType
+    MEDIKIT = 0
+    REPAIR_KIT = 1
+    AMMO_CRATE = 2
+  end
+
+  class Bonus < Unit
+  end
+end
