@@ -13,6 +13,7 @@ require_relative 'tanks/team'
 require_relative 'tanks/world'
 require_relative 'tanks/stream'
 require_relative 'tanks/client'
+require_relative 'tanks/test_strategy'
 
 module Tanks
   def self.run(strategy_class, host = nil, port = nil, token = nil)
