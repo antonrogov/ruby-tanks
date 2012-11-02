@@ -15,7 +15,7 @@ require_relative 'tanks/stream'
 require_relative 'tanks/client'
 
 module Tanks
-  def self.run(strategy_class, host, port, token)
+  def self.run(strategy_class, host = nil, port = nil, token = nil)
     host ||= 'localhost'
     port = (port || 31000).to_i
     token ||= '0000000000000000'
