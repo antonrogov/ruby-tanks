@@ -9,7 +9,7 @@ module Tanks
     end
 
     def distance_to(x, y)
-      hypot(x - self.x, y - self.y)
+      Math.hypot x - self.x, y - self.y
     end
   end
 end

@@ -16,7 +16,7 @@ module Tanks
 
     def initialize(size, strategy_class)
       @members = (1..size).to_a.map {|i|
-        Member.new strategy_class.new(i, size)
+        Member.new strategy_class.new(i - 1, size)
       }
     end
 
